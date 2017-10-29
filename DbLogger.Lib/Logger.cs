@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DbLogger.IO;
+using System;
 using System.Collections.Generic;
 using System.Data.Linq;
 using System.IO;
