@@ -77,6 +77,15 @@ namespace DbLogger
         }
 
         /// <summary>
+        /// Resets all the LogWriters.
+        /// </summary>
+        public static void Reset()
+        {
+            foreach (var writer in Instance._writers)
+                writer.Reset();
+        }
+
+        /// <summary>
         /// Adds specified writer as a destination for the log entries.
         /// </summary>
         /// <param name="writer">The writer.</param>
